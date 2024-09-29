@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Preview</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="preview.css">
+</head>
+<body>
+    <div id="preview-section">
+        <h1>Preview Your CV</h1>
+
+        <div id="cv-preview">
+            <h2 id="preview-name"></h2>
+            <p><strong>Email:</strong> <span id="preview-email"></span></p>
+            <p><strong>Phone:</strong> <span id="preview-phone"></span></p>
+            <p><strong>Address:</strong> <span id="preview-address"></span></p>
+            <hr>
+
+            <h3>Summary</h3>
+            <p id="preview-summary"></p>
+
+            <h3>Education</h3>
+            <p id="preview-education"></p>
+
+            <h3>Experience</h3>
+            <p id="preview-experience"></p>
+
+            <h3>Skills</h3>
+            <p id="preview-skills"></p>
+        </div>
+
+        <div class="btn-container">
+            <button id="download-pdf" class="btn btn-primary">Download as PDF</button>
+            <a href="input-info.html" class="btn btn-secondary">Go Back to Edit</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="preview.js"></script>
+</body>
+</html>

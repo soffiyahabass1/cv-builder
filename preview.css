@@ -1,0 +1,131 @@
+/* General Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Preview Section */
+#preview-section {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#preview-section:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Styling */
+#preview-section h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #0d47a1;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* CV Preview Section Styling */
+#cv-preview h2 {
+    color: #1565c0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#cv-preview p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Divider Styling */
+hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Section Headers */
+#cv-preview h3 {
+    color: #1e88e5;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Button Styling */
+.btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn-primary {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1565c0;
+    box-shadow: 0 4px 15px rgba(21, 101, 192, 0.3);
+}
+
+.btn-secondary {
+    background-color: #90caf9;
+    color: #0d47a1;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #64b5f6;
+    box-shadow: 0 4px 15px rgba(100, 181, 246, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #preview-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #preview-section h1 {
+        font-size: 1.8rem;
+    }
+
+    #cv-preview h2 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
